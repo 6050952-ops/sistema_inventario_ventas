@@ -29,3 +29,11 @@ $result->free();
 echo "Error al consultar los datos: " . $e->getMessage();
 }
 ?>
+
+<?php
+
+require_once 'conexion.php';
+
+echo "Conexión exitosa";
+
+?>

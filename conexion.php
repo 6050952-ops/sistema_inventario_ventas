@@ -24,3 +24,18 @@ $conn->set_charset("utf8");
 die("Error crítico: No se pudo establecer la conexión segura con el servidor de datos.");
 }
 ?>
+
+<?php
+
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "practica_ventas";
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+?>
