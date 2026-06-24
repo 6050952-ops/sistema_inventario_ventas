@@ -26,6 +26,11 @@ $resultado = $conn->query($sql);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inventario - Sistema de Ventas</title>
+<a href="nuevo_producto.php"
+style="background:#3b82f6; color:white; padding:10px;
+text-decoration:none; border-radius:5px;">
++ Nuevo Producto
+</a>
 <style>
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:
 #f8fafc; padding: 20px; }
