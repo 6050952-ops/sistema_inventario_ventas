@@ -47,6 +47,19 @@ th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
 th { background-color: #f1f5f9; color: #334155; font-weight: bold; }
 tr:hover { background-color: #f8fafc; }
 .stock-bajo { color: #dc2626; font-weight: bold; }
+.btn-eliminar{
+    background-color:#ef4444;
+    color:white;
+    padding:6px 12px;
+    text-decoration:none;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.btn-eliminar:hover{
+    background-color:#b91c1c;
+} 
 </style>
 </head>
 <body>
@@ -68,8 +81,10 @@ tr:hover { background-color: #f8fafc; }
 <th>Categoría</th>
 <th>Stock</th>
 <th>Precio Unitario</th>
+<th>Acciones</th>
 </tr>
 </thead>
+
 <tbody>
 <?php
 // 5. Ciclo WHILE para imprimir las filas dinámicamente
@@ -87,6 +102,13 @@ $claseStock = ($fila['stock'] < 10) ? 'stock-bajo' : '';
 <td> <?php echo $fila['nombre_categoria']; ?> </td>
 <td class="<?php echo $claseStock; ?>"> <?php echo $fila['stock']; ?> unds. </td>
 <td> $<?php echo number_format($fila['precio'], 2); ?> </td>
+<td>
+<a href="eliminar_producto.php?id=<?php echo $fila['id']; ?>"
+class="btn-eliminar"
+onclick="return confirm('¿Estás absolutamente seguro de eliminar el producto: <?php echo $fila['nombre_producto']; ?>?');">
+🗑️ Eliminar
+</a>
+</td>
 </tr>
 <?php
 } // Fin del bucle while
