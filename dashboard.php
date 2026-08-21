@@ -206,6 +206,9 @@ $precio_maximo = $fila_caro['max_precio'] ? $fila_caro['max_precio'] : 0;
         </a> 
 
     </div> 
-
+<a href="nueva_compra.php" class="modulo" style="background:#10b981;">
+    📥 Registrar Ingreso de Mercadería
+</a>
 </body> 
 </html>
+
