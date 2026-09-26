@@ -199,6 +199,7 @@ $precio_maximo = $fila_caro['max_precio'] ? $fila_caro['max_precio'] : 0;
         <a href="proveedores.php" class="modulo" style="background:#8b5cf6;">
             🚚 Módulo de Proveedores
         </a>
+        <a href="historial_compras.php" class="modulo">Historial de Compras</a>
 
         <!-- Punto de Venta -->
         <a href="nueva_compra.php" class="modulo" style="background:#10b981;">
